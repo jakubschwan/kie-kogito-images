@@ -25,4 +25,4 @@ echo "---- Pulling image ${image_full_tag} ----"
 docker pull ${image_full_tag}
 
 echo "---- Run behave test for image ${image_id} ----"
-cekit --descriptor ${image_descriptor_filename} test --image ${image_full_tag} behave
+cekit --descriptor ${image_descriptor_filename} test --image ${image_full_tag} behave --steps-url https://github.com/jakubschwan/behave-test-steps.git
